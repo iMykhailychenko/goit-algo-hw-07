@@ -57,13 +57,13 @@ def min_value_node(node):
     current = node
     while current.left is not None:
         current = current.left
-    return current
+    return current.key
 
 def max_value_node(node):
     current = node
     while current.right is not None:
         current = current.right
-    return current
+    return current.key
 
 def insert(root, key):
     if not root:
